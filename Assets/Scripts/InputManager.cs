@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Bits.Patterns;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace Bits

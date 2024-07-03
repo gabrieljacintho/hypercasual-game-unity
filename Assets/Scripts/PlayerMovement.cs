@@ -13,6 +13,7 @@ namespace Bits
         private CharacterController _characterController;
 
         private Vector3 _currentVelocity;
+        private Quaternion _targetRotation;
 
         public float Speed
         {
@@ -44,9 +45,12 @@ namespace Bits
 
         private void UpdateRotation(Vector3 delta)
         {
-            Quaternion targetRotation = Quaternion.LookRotation(delta, transform.up);
+            if (delta.magnitude > 0f)
+            {
+                _targetRotation = Quaternion.LookRotation(delta, transform.up);
+            }
 
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _rotateSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, _targetRotation, _rotateSpeed * Time.deltaTime);
         }
     }
 }

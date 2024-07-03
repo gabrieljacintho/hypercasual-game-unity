@@ -1,15 +1,16 @@
 ﻿using UnityEngine;
 
-namespace Bits
+namespace Bits.Animation
 {
     [RequireComponent(typeof(Animator))]
-    public class AnimatorMovement : MonoBehaviour
+    public class CharacterAnimator : MonoBehaviour
     {
-        [SerializeField] private PlayerMovement _playerMovement;
+        [SerializeField] private CharacterController _characterController;
+        [SerializeField] private float _maxSpeed = 1f;
         [SerializeField] private string _movementAmountPropertyName = "MovementAmount";
         [SerializeField] private string _movementSpeedPropertyName = "MovementSpeed";
         [SerializeField] private float _maxMovementAmountThreshold = 0.9f;
-        [SerializeField] private float _transitionSmoothTime = 0.3f;
+        [SerializeField] private float _transitionSpeed = 1f;
 
         private Animator _animator;
 
@@ -17,7 +18,6 @@ namespace Bits
         private int _movementSpeedPropertyId;
 
         private float _currentMovementAmount;
-        private float _currentTransitionVelocity;
 
 
         private void Awake()
@@ -29,9 +29,8 @@ namespace Bits
 
         private void LateUpdate()
         {
-            float currentSpeed = _playerMovement.CurrentVelocity.magnitude;
-            float maxSpeed = _playerMovement.Speed;
-            float targetMovementAmount = Mathf.Clamp01(currentSpeed / maxSpeed);
+            float currentSpeed = _characterController.velocity.magnitude;
+            float targetMovementAmount = Mathf.Clamp01(currentSpeed / _maxSpeed);
 
             UpdateMovementAmount(targetMovementAmount);
             UpdateMovementSpeed(targetMovementAmount);
@@ -44,23 +43,23 @@ namespace Bits
                 target = target >= _maxMovementAmountThreshold ? 1f : 0.5f;
             }
 
-            if (_transitionSmoothTime > 0f)
-            {
-                _currentMovementAmount = Mathf.SmoothDamp(_currentMovementAmount, target,
-                    ref _currentTransitionVelocity, _transitionSmoothTime, Mathf.Infinity, Time.deltaTime);
-            }
-            else
-            {
-                _currentMovementAmount = target;
-            }
+            _currentMovementAmount = Mathf.MoveTowards(_currentMovementAmount, target, _transitionSpeed * Time.deltaTime);
 
             _animator.SetFloat(_movementAmountPropertyId, _currentMovementAmount);
         }
 
         private void UpdateMovementSpeed(float targetMovementAmount)
         {
-            float t = Mathf.Clamp01(targetMovementAmount / 0.5f);
-            float movementSpeed = Mathf.Lerp(0f, 1f, t);
+            float movementSpeed;
+            if (targetMovementAmount > 0f)
+            {
+                float t = Mathf.Clamp01(targetMovementAmount / 0.5f);
+                movementSpeed = Mathf.Lerp(0f, 1f, t);
+            }
+            else
+            {
+                movementSpeed = 1f;
+            }
 
             _animator.SetFloat(_movementSpeedPropertyId, movementSpeed);
         }

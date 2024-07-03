@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Bits
+namespace Bits.Patterns
 {
     public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {
