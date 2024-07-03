@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5fd3da07078e6674e993ecdace763739
+timeCreated: 1511476356
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 113963
+  packageName: Forceling World Grid
+  packageVersion: 1.2
+  assetPath: Assets/Forceling/ForcelingWorldGrid/Forceling_WorldGrid.mat
+  uploadId: 348577

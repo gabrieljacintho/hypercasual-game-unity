@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 13e5176d9f68960459171bcad66c9c62
+timeCreated: 1503167787
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 113963
+  packageName: Forceling World Grid
+  packageVersion: 1.2
+  assetPath: Assets/Forceling/ForcelingWorldGrid/WorldGrid_Demo.unity
+  uploadId: 348577

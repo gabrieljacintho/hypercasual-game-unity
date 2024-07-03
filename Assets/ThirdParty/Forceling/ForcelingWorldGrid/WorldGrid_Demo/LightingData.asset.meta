@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d8285fa008c802841a87185b2c237e42
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 113963
+  packageName: Forceling World Grid
+  packageVersion: 1.2
+  assetPath: Assets/Forceling/ForcelingWorldGrid/WorldGrid_Demo/LightingData.asset
+  uploadId: 348577
