@@ -2306,6 +2306,7 @@ GameObject:
   - component: {fileID: 7680863438748176157}
   - component: {fileID: 2932333537753204652}
   - component: {fileID: 1796232040850835658}
+  - component: {fileID: 839587958632233978}
   m_Layer: 6
   m_Name: Character_NPC
   m_TagString: Untagged
@@ -2443,6 +2444,38 @@ MonoBehaviour:
   _startEnabled: 0
   _animator: {fileID: 7357239819853740958}
   _characterController: {fileID: 8369334703046493871}
+--- !u!114 &839587958632233978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8530063657861622118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 760ae25eacde0a04fbf1c08bf69fe50b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _size: 1
+  _upDirection: {x: 0, y: 1, z: 0}
+  _positionOffset: {x: 0, y: 0, z: 0}
+  _rotationOffset: {x: 0, y: 0, z: 0}
+  _speed: 5
+  OnStack:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1796232040850835658}
+        m_TargetAssemblyTypeName: Bits.RagdollToggler, Bits
+        m_MethodName: ResetTransformValues
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8707581304312123313
 GameObject:
   m_ObjectHideFlags: 0

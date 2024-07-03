@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Bits.Extensions;
+using UnityEngine;
 
 namespace Bits
 {
@@ -9,10 +10,12 @@ namespace Bits
         [SerializeField] private CharacterController _characterController;
 
         private Rigidbody[] _rigidbodies;
+        private TransformValues _defaultTransformValues;
 
 
         private void Start()
         {
+            LoadReferences();
             SetRagdoll(_startEnabled);
         }
 
@@ -28,9 +31,9 @@ namespace Bits
 
         public void SetRagdoll(bool enabled)
         {
-            if (_rigidbodies == null)
+            if (!enabled)
             {
-                _rigidbodies = GetComponentsInChildren<Rigidbody>();
+                ResetTransformValues();
             }
 
             foreach (Rigidbody rigidbody in _rigidbodies)
@@ -47,6 +50,24 @@ namespace Bits
             {
                 _characterController.enabled = !enabled;
             }
+        }
+
+        public void ResetTransformValues()
+        {
+            if (_rigidbodies[0].transform == transform)
+            {
+                return;
+            }
+
+            transform.position = _rigidbodies[0].transform.position - _defaultTransformValues.Position;
+
+            _rigidbodies[0].transform.SetValues(_defaultTransformValues);
+        }
+
+        private void LoadReferences()
+        {
+            _rigidbodies = GetComponentsInChildren<Rigidbody>();
+            _defaultTransformValues = _rigidbodies[0].transform.Values();
         }
     }
 }

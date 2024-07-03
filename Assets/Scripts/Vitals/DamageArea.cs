@@ -1,5 +1,4 @@
-﻿using Bits.Extensions;
-using Bits.Physics;
+﻿using Bits.Physics;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,7 +7,7 @@ namespace Bits.Vitals
     public class DamageArea : TriggerComponent
     {
         [Space]
-        public UnityEvent OnHit;
+        public UnityEvent<Health> OnHit;
 
 
         protected override void OnValidTriggerEnter(Collider other)
@@ -22,7 +21,7 @@ namespace Bits.Vitals
         protected virtual void Hit(Health health)
         {
             health.TakeDamage();
-            OnHit?.Invoke();
+            OnHit?.Invoke(health);
         }
     }
 }

@@ -172,6 +172,7 @@ Transform:
   - {fileID: 5974268852707435296}
   - {fileID: 4966005102261577517}
   - {fileID: 5098232511542479154}
+  - {fileID: 3917433662805198864}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &767735948824371869
@@ -796,7 +797,19 @@ MonoBehaviour:
     m_Bits: 64
   OnHit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3467638179918269220}
+        m_TargetAssemblyTypeName: Bits.GameObjectStack.PushGameObjectToStack, Bits
+        m_MethodName: PushIfDead
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _force: 24
   _radius: 4
   _upwardsModifier: 3
@@ -980,6 +993,65 @@ Transform:
   - {fileID: 6882735773241386250}
   m_Father: {fileID: 6263757974017926372}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5266122569578172059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3917433662805198864}
+  - component: {fileID: 5722371743949248168}
+  - component: {fileID: 3467638179918269220}
+  m_Layer: 7
+  m_Name: GameObjectStack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3917433662805198864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5266122569578172059}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.2, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6263757974017926372}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5722371743949248168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5266122569578172059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4011165653b90c44a2c4c35db3c1f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3467638179918269220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5266122569578172059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d52d4344ba25eb4b80c397ac6cad751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetStack: {fileID: 5722371743949248168}
+  _defaultDelay: 1
 --- !u!1 &6207246707233602302
 GameObject:
   m_ObjectHideFlags: 0
