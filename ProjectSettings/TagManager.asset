@@ -8,12 +8,12 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - InvisibleWall
   - Water
   - UI
   - NPC
   - Stack
-  - 
+  - Player
   - 
   - 
   - 

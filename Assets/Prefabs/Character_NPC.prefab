@@ -1626,6 +1626,7 @@ GameObject:
   - component: {fileID: 3287614455426733190}
   - component: {fileID: 6201913938974214884}
   - component: {fileID: 2182161220696964410}
+  - component: {fileID: 7669898349921604443}
   m_Layer: 6
   m_Name: mixamorig:Hips
   m_TagString: Untagged
@@ -1641,8 +1642,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6018914802962149094}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 1.191479, z: 0.004971}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.191479, z: 0.004971}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1699,6 +1700,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7669898349921604443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6018914802962149094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d91cfd0536d214e87ab5f359289844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveSpeed: 15
+  _rotateSpeed: 360
+  _positionOffset: {x: 0, y: 0.25, z: -0.25}
+  _rotationOffset: {x: 90, y: 0, z: -90}
 --- !u!1 &6824887000721403651
 GameObject:
   m_ObjectHideFlags: 0
@@ -2307,6 +2324,7 @@ GameObject:
   - component: {fileID: 2932333537753204652}
   - component: {fileID: 1796232040850835658}
   - component: {fileID: 839587958632233978}
+  - component: {fileID: 972938106756786493}
   m_Layer: 6
   m_Name: Character_NPC
   m_TagString: Untagged
@@ -2456,26 +2474,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 760ae25eacde0a04fbf1c08bf69fe50b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _size: 1
+  _size: 0.5
   _upDirection: {x: 0, y: 1, z: 0}
+  OnStackEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnUnstackEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &972938106756786493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8530063657861622118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d91cfd0536d214e87ab5f359289844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveSpeed: 15
+  _rotateSpeed: 360
   _positionOffset: {x: 0, y: 0, z: 0}
   _rotationOffset: {x: 0, y: 0, z: 0}
-  _speed: 5
-  OnStack:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1796232040850835658}
-        m_TargetAssemblyTypeName: Bits.RagdollToggler, Bits
-        m_MethodName: ResetTransformValues
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &8707581304312123313
 GameObject:
   m_ObjectHideFlags: 0

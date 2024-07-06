@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2283250242422481519}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1304234082634989363}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:RightUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2968922702773020511}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6882735773241386250}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 4354416000624468258}
   - component: {fileID: 1754646232806079552}
   - component: {fileID: 7393565256234954425}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Character_Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,7 +314,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8066738481054434149}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:LeftUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,7 +346,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8323402260503594062}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -378,7 +378,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4282775266937169662}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -409,7 +409,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5479472267553768363}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,7 +441,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3496467503426895239}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:RightToe_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -473,7 +473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6158166645700637785}
   - component: {fileID: 6571445654870130293}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Necktie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -564,7 +564,7 @@ GameObject:
   m_Component:
   - component: {fileID: 232251618547038445}
   - component: {fileID: 1957035892954877343}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Character_Man
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -670,7 +670,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5378453160894250029}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:RightForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -702,7 +702,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4399412984509185565}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -737,7 +737,7 @@ GameObject:
   - component: {fileID: 1987955771655535819}
   - component: {fileID: 4195296503951971920}
   - component: {fileID: 2645990199067990033}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DamageArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -826,6 +826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _duration: 0.1
+  _loop: 0
   _startOnEnable: 1
   OnStart:
     m_PersistentCalls:
@@ -854,7 +855,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7251099336138636108}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -904,7 +905,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7022960559379676089}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:LeftToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -936,7 +937,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1695404388848254066}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -968,7 +969,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3672643652731598573}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1019,8 +1020,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5266122569578172059}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.2, z: -1}
+  m_LocalRotation: {x: 0, y: 0.13739635, z: 0, w: 0.9905161}
+  m_LocalPosition: {x: -0.225, y: 1.67, z: -0.519}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1061,7 +1062,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8815618922031521330}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:RightToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1093,7 +1094,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8995321424065915794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1126,7 +1127,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6335929281826303563}
   - component: {fileID: 7878658985995808289}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Coat_man
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1229,7 +1230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5474426663001195134}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:LeftToe_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1260,7 +1261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1063725654371357140}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:LeftShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1292,7 +1293,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 637531361448472644}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:Spine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1330,7 +1331,7 @@ GameObject:
   - component: {fileID: 4966005102261577517}
   - component: {fileID: 4423616151172611019}
   - component: {fileID: 1194196899790595761}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trigger_Attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1403,6 +1404,9 @@ MonoBehaviour:
           m_StringArgument: Attack
           m_BoolArgument: 0
         m_CallState: 2
+  OnExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7154765211261907972
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,7 +1417,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6565848469448590479}
   - component: {fileID: 8345684608247295749}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Life_Jacket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1508,7 +1512,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7790850116073843341}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:LeftForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1541,7 +1545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5974268852707435296}
   - component: {fileID: 6626635389786944735}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pants_Man
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1635,7 +1639,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7315611341859366518}
   - component: {fileID: 7308600431632262679}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Jacket_Man
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1734,7 +1738,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4019700945373727503}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:LeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1766,7 +1770,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3763911941053809857}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:RightShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1798,7 +1802,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6177478663274719269}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1829,7 +1833,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 685693548540661633}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mixamorig:HeadTop_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1862,6 +1866,10 @@ PrefabInstance:
     - target: {fileID: 2088885507731380189, guid: 6a12b424229e6e54aa9f33ed5ac37337, type: 3}
       propertyPath: m_Name
       value: Glasses_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2088885507731380189, guid: 6a12b424229e6e54aa9f33ed5ac37337, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3073266484275619278, guid: 6a12b424229e6e54aa9f33ed5ac37337, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1925,6 +1933,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hat_Crown
       objectReference: {fileID: 0}
+    - target: {fileID: 4938414455183287488, guid: 433c9d8b5191de54d9dca1c0fcfde5fa, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8274128536521692883, guid: 433c9d8b5191de54d9dca1c0fcfde5fa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1986,6 +1998,10 @@ PrefabInstance:
     - target: {fileID: 4817770360973623871, guid: 71e9f925657b4e646baa5521859863c9, type: 3}
       propertyPath: m_Name
       value: Bowtie
+      objectReference: {fileID: 0}
+    - target: {fileID: 4817770360973623871, guid: 71e9f925657b4e646baa5521859863c9, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8396804579755028524, guid: 71e9f925657b4e646baa5521859863c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2049,6 +2065,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hat_Beanie
       objectReference: {fileID: 0}
+    - target: {fileID: 816486596112575007, guid: d96dd5e09e5871147828f533a4142eb3, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4399990324630296588, guid: d96dd5e09e5871147828f533a4142eb3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2110,6 +2130,10 @@ PrefabInstance:
     - target: {fileID: 911381554994060950, guid: ac7b810646bb43f4f8254461e1d9e327, type: 3}
       propertyPath: m_Name
       value: Hat_Cowboy
+      objectReference: {fileID: 0}
+    - target: {fileID: 911381554994060950, guid: ac7b810646bb43f4f8254461e1d9e327, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4251038967494175877, guid: ac7b810646bb43f4f8254461e1d9e327, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2213,6 +2237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Glasses_04
       objectReference: {fileID: 0}
+    - target: {fileID: 8446948694276273289, guid: dab51a9ab5e4a2545b67873c2dd417b9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2274,6 +2302,10 @@ PrefabInstance:
     - target: {fileID: 7287152714156161727, guid: ed8b2d9a76f554b4e940f0dc516dde1b, type: 3}
       propertyPath: m_Name
       value: Headphones
+      objectReference: {fileID: 0}
+    - target: {fileID: 7287152714156161727, guid: ed8b2d9a76f554b4e940f0dc516dde1b, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2337,6 +2369,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hair_04
       objectReference: {fileID: 0}
+    - target: {fileID: 8441767921167763096, guid: 92ff5fa6e4433e447a4d005387d39c96, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2358,6 +2394,10 @@ PrefabInstance:
     - target: {fileID: 658191986971728616, guid: ad4bea54f1e03a448bc2515458ee2693, type: 3}
       propertyPath: m_Name
       value: BackPack
+      objectReference: {fileID: 0}
+    - target: {fileID: 658191986971728616, guid: ad4bea54f1e03a448bc2515458ee2693, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4573695448235354363, guid: ad4bea54f1e03a448bc2515458ee2693, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2421,6 +2461,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moustache
       objectReference: {fileID: 0}
+    - target: {fileID: 876745067285303613, guid: d1945f2796836a542b7eea48290e25a6, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4211300125006045998, guid: d1945f2796836a542b7eea48290e25a6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2482,6 +2526,10 @@ PrefabInstance:
     - target: {fileID: 5578018991897063319, guid: 04144577b870e93478e05da7ac9329a4, type: 3}
       propertyPath: m_Name
       value: Hat_Witch
+      objectReference: {fileID: 0}
+    - target: {fileID: 5578018991897063319, guid: 04144577b870e93478e05da7ac9329a4, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8877231898821057924, guid: 04144577b870e93478e05da7ac9329a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2545,6 +2593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Glasses_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1243355288538526436, guid: 719ee9af4107bae4cac4243cc380c8a5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2817583023642886391, guid: 719ee9af4107bae4cac4243cc380c8a5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2607,6 +2659,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Glasses_03
       objectReference: {fileID: 0}
+    - target: {fileID: 640331881310797561, guid: 2472b4f06cf40f6439164b14aed7d317, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4519841256594328810, guid: 2472b4f06cf40f6439164b14aed7d317, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2668,6 +2724,10 @@ PrefabInstance:
     - target: {fileID: 2020732637423479671, guid: 66606c34c3ddb6a498fda300436cdf31, type: 3}
       propertyPath: m_Name
       value: Hat_Cap
+      objectReference: {fileID: 0}
+    - target: {fileID: 2020732637423479671, guid: 66606c34c3ddb6a498fda300436cdf31, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3049021027892648292, guid: 66606c34c3ddb6a498fda300436cdf31, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2771,6 +2831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hat_Top
       objectReference: {fileID: 0}
+    - target: {fileID: 2996714871942900456, guid: 43f3bd8217a57cf41977fc4bca2dfe7e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2792,6 +2856,10 @@ PrefabInstance:
     - target: {fileID: 1329033959637210309, guid: 1c33b2d42586fed4784b40771ed7dc11, type: 3}
       propertyPath: m_Name
       value: Hair_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329033959637210309, guid: 1c33b2d42586fed4784b40771ed7dc11, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2606164167883597526, guid: 1c33b2d42586fed4784b40771ed7dc11, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2895,6 +2963,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Glasses_05
       objectReference: {fileID: 0}
+    - target: {fileID: 4160973771891178697, guid: 296ac99068ab1964bb58cfe55198cd8e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2916,6 +2988,10 @@ PrefabInstance:
     - target: {fileID: 4642167347873170403, guid: bd27968e9d9191b499df7aa29198f3ca, type: 3}
       propertyPath: m_Name
       value: Hair_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642167347873170403, guid: bd27968e9d9191b499df7aa29198f3ca, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8518298400330035696, guid: bd27968e9d9191b499df7aa29198f3ca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2979,6 +3055,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hat_Sombrero
       objectReference: {fileID: 0}
+    - target: {fileID: 2042516369613146263, guid: ee0d994d62c5c3a458a7d86cc62a15e5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3027298601528244868, guid: ee0d994d62c5c3a458a7d86cc62a15e5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3040,6 +3120,10 @@ PrefabInstance:
     - target: {fileID: 97135865334185834, guid: cc7ff246a9abd27468db3b757d7a2b33, type: 3}
       propertyPath: m_Name
       value: Hair_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 97135865334185834, guid: cc7ff246a9abd27468db3b757d7a2b33, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3963802463481843065, guid: cc7ff246a9abd27468db3b757d7a2b33, type: 3}
       propertyPath: m_LocalPosition.x

@@ -7,11 +7,26 @@ namespace Bits.GameObjectStack
     {
         private Stack<StackableGameObject> _gameObjectsStack = new Stack<StackableGameObject>();
 
+        public int Count => _gameObjectsStack.Count;
+
 
         public void Push(StackableGameObject target)
         {
             _gameObjectsStack.Push(target);
-            target.Stack(this);
+            target.OnStack(this);
+        }
+
+        public StackableGameObject Pop()
+        {
+            if (_gameObjectsStack.Count == 0)
+            {
+                return null;
+            }
+
+            StackableGameObject target = _gameObjectsStack.Pop();
+            target.OnUnstack();
+
+            return target;
         }
 
         public void GetPositionAndRotation(StackableGameObject target, out Vector3 position, out Quaternion rotation)

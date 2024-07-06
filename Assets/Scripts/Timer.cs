@@ -6,11 +6,17 @@ namespace Bits
     public class Timer : MonoBehaviour
     {
         [Tooltip("Timer duration in seconds.")]
-        [SerializeField] private float _duration;
+        [SerializeField] private float _duration = 1f;
+        [SerializeField] private bool _loop;
         [SerializeField] private bool _startOnEnable;
 
         private bool _isRunning;
         private float _elapsedTime;
+
+        public bool IsRunning => _isRunning;
+        public float ElapsedTime => _elapsedTime;
+        public float Duration => _duration;
+        public float Progress => Mathf.Clamp01(_elapsedTime / _duration);
 
         [Space]
         public UnityEvent OnStart;
@@ -48,9 +54,17 @@ namespace Bits
             OnStart?.Invoke();
         }
 
+        public void StopTimer()
+        {
+            _elapsedTime = 0f;
+            _isRunning = false;
+        }
+
         private void OnEndTimer()
         {
-            _isRunning = false;
+            _elapsedTime = 0f;
+            _isRunning = _loop;
+
             OnEnd?.Invoke();
         }
     }
