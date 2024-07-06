@@ -60,7 +60,12 @@ namespace Bits.Economy
 
         public void RemoveCurrency(CurrencyData data, float value)
         {
-            AddCurrency(data.Id, -value);
+            RemoveCurrency(data.Id, value);
+        }
+
+        public void RemoveCurrency(Currency currency)
+        {
+            RemoveCurrency(currency.Id, currency.Value);
         }
 
         public Currency GetCurrency(string id)
@@ -82,6 +87,12 @@ namespace Bits.Economy
         public void CleanAllCurrencies()
         {
             _currencies.Clear();
+        }
+
+        public bool CanBuy(string currencyId, float price)
+        {
+            float value = GetCurrency(currencyId).Value;
+            return price < value;
         }
     }
 }

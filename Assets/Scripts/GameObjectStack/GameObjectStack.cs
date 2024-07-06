@@ -5,13 +5,26 @@ namespace Bits.GameObjectStack
 {
     public class GameObjectStack : MonoBehaviour
     {
+        [Tooltip("Set negative to not limit.")]
+        [SerializeField] private int _maxItems = -1;
+
         private Stack<StackableGameObject> _gameObjectsStack = new Stack<StackableGameObject>();
 
+        public int MaxItems
+        {
+            get => _maxItems;
+            set => _maxItems = value;
+        }
         public int Count => _gameObjectsStack.Count;
 
 
         public void Push(StackableGameObject target)
         {
+            if (_maxItems >= 0 && _gameObjectsStack.Count >= _maxItems)
+            {
+                return;
+            }
+
             _gameObjectsStack.Push(target);
             target.OnStack(this);
         }
