@@ -2186,10 +2186,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character_Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5722371743949248168, guid: 4ef95bf1697eb824ea1f5c0d90a37b09, type: 3}
-      propertyPath: _maxItems
-      value: 240
-      objectReference: {fileID: 0}
     - target: {fileID: 6263757974017926372, guid: 4ef95bf1697eb824ea1f5c0d90a37b09, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
