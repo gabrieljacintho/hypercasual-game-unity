@@ -1,4 +1,6 @@
 ﻿using Bits.Extensions;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -7,12 +9,23 @@ namespace Bits.GameObjectStack
     public class StackableGameObject : MonoBehaviour
     {
         [SerializeField] private float _size = 1f;
-        [SerializeField] private Vector3 _upDirection = Vector3.up;
-        
+
+        private List<StackableGameObjectDisplacer> _displacers;
         private GameObjectStack _stack;
 
         public float Size => _size;
-        public Vector3 UpDirection => transform.InverseTransformDirection(_upDirection);
+        public List<StackableGameObjectDisplacer> Displacers
+        {
+            get
+            {
+                if (_displacers == null)
+                {
+                    _displacers = GetComponentsInChildren<StackableGameObjectDisplacer>().ToList();
+                }
+
+                return _displacers;
+            }
+        }
         public GameObjectStack GameObjectStack => _stack;
 
         [Space]

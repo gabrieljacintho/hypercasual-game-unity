@@ -8,44 +8,62 @@ namespace Bits.GameObjectStack
         [Tooltip("Set negative to not limit.")]
         [SerializeField] private int _maxItems = -1;
 
-        private Stack<StackableGameObject> _gameObjectsStack = new Stack<StackableGameObject>();
+        private Stack<StackableGameObject> _gameObjects = new Stack<StackableGameObject>();
+#if UNITY_EDITOR
+        // Variable to show in inspector (debug)
+        private List<StackableGameObject> _gameObjectsList;
+#endif
 
         public int MaxItems
         {
             get => _maxItems;
             set => _maxItems = value;
         }
-        public int Count => _gameObjectsStack.Count;
+        public int Count => _gameObjects.Count;
 
+
+        private void LateUpdate()
+        {
+            foreach (StackableGameObject stackableGameObject in _gameObjects)
+            {
+                foreach (StackableGameObjectDisplacer displacer in stackableGameObject.Displacers)
+                {
+                    displacer.UpdateDisplacer();
+                }
+            }
+#if UNITY_EDITOR
+            _gameObjectsList = new List<StackableGameObject>(_gameObjects);
+#endif
+        }
 
         public void Push(StackableGameObject target)
         {
-            if (_maxItems >= 0 && _gameObjectsStack.Count >= _maxItems)
+            if (_maxItems >= 0 && _gameObjects.Count >= _maxItems)
             {
                 return;
             }
 
-            _gameObjectsStack.Push(target);
+            _gameObjects.Push(target);
             target.OnStack(this);
         }
 
         public StackableGameObject Pop()
         {
-            if (_gameObjectsStack.Count == 0)
+            if (_gameObjects.Count == 0)
             {
                 return null;
             }
 
-            StackableGameObject target = _gameObjectsStack.Pop();
+            StackableGameObject target = _gameObjects.Pop();
             target.OnUnstack();
 
             return target;
         }
 
-        public void GetPositionAndRotation(StackableGameObject target, out Vector3 position, out Quaternion rotation)
+        public Transform GetPivot(StackableGameObject target, out StackableGameObject stackableGameObject)
         {
             bool targetFound = false;
-            StackableGameObject[] gameObjectsArray = _gameObjectsStack.ToArray();
+            StackableGameObject[] gameObjectsArray = _gameObjects.ToArray();
 
             for (int i = 0; i < gameObjectsArray.Length; i++)
             {
@@ -60,16 +78,48 @@ namespace Bits.GameObjectStack
                     continue;
                 }
 
-                StackableGameObject stackableGameObject = gameObjectsArray[i];
-                Transform originTransform = stackableGameObject.transform;
-
-                position = originTransform.position + (stackableGameObject.UpDirection * stackableGameObject.Size);
-                rotation = originTransform.rotation;
-                return;
+                stackableGameObject = gameObjectsArray[i];
+                return stackableGameObject.transform;
             }
 
-            position = transform.position;
-            rotation = transform.rotation;
+            stackableGameObject = null;
+            return transform;
+        }
+
+        public Vector3 GetPosition(StackableGameObject target)
+        {
+            Transform pivot = GetPivot(target, out StackableGameObject stackableGameObject);
+            Vector3 position = pivot.position;
+
+            if (stackableGameObject != null)
+            {
+                position += pivot.up * stackableGameObject.Size;
+            }
+
+            return position;
+        }
+
+        public Quaternion GetRotation(StackableGameObject target)
+        {
+            return GetPivot(target, out StackableGameObject stackableGameObject).rotation;
+        }
+
+        public void GetPositionAndRotation(StackableGameObject target, out Vector3 position, out Quaternion rotation)
+        {
+            Transform pivot = GetPivot(target, out StackableGameObject stackableGameObject);
+
+            position = pivot.position;
+            rotation = pivot.rotation;
+
+            if (stackableGameObject != null)
+            {
+                position += pivot.up * stackableGameObject.Size;
+            }
+        }
+
+        public Vector3 GetUpDirection(StackableGameObject target)
+        {
+            return GetPivot(target, out StackableGameObject stackableGameObject).up;
         }
     }
 }
