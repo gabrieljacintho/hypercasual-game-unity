@@ -1,5 +1,5 @@
 # 67 Bits Test
-Hypercasual game prototype developed with Unity Engine and C# for 67 Bits test.
+Hypercasual game prototype developed with Unity Engine and C# for testing by the 67 Bits game studio.
 
 [![](https://img.youtube.com/vi/Acdp8bCh1Po/0.jpg)](https://youtube.com/shorts/Acdp8bCh1Po?feature=share)
 
