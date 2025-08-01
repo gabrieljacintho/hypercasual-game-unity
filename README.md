@@ -1,5 +1,5 @@
 # Hypercasual Game
-Hypercasual game prototype developed with Unity Engine and C#.
+Hypercasual mobile game prototype developed with Unity Engine and C#.
 
 [![](https://img.youtube.com/vi/Acdp8bCh1Po/0.jpg)](https://youtube.com/shorts/Acdp8bCh1Po?feature=share)
 
